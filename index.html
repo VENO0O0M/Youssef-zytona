@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزارة أبو يوسف | أقوى عروض الجزارة في مصر</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#e5c158',
+                            500: '#d4af37',
+                            600: '#b5952f',
+                        },
+                        dark: {
+                            900: '#111111',
+                            800: '#1a1a1a',
+                            700: '#2a2a2a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                        title: ['Aref Ruqaa', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f3f4f6;
+            scroll-behavior: smooth;
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gold-border {
+            border-image: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728) 1;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+            transform: translateX(-5px);
+        }
+
+        .menu-dots {
+            flex-grow: 1;
+            border-bottom: 2px dotted #d4af37;
+            margin: 0 10px;
+            opacity: 0.5;
+            position: relative;
+            top: -4px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+
+        /* Hero Image Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1607623814075-e51df1bd682f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .category-card {
+            background: linear-gradient(145deg, #1a1a1a, #111111);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark-900/95 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-title text-3xl font-bold gold-gradient-text">جزارة أبو يوسف</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 space-x-reverse items-center">
+                    <a href="#home" class="text-white hover:text-gold-500 transition px-3 py-2 text-lg font-medium">الرئيسية</a>
+                    <a href="#menu" class="text-white hover:text-gold-500 transition px-3 py-2 text-lg font-medium">قائمة الأسعار</a>
+                    <a href="#about" class="text-white hover:text-gold-500 transition px-3 py-2 text-lg font-medium">من نحن</a>
+                    <a href="https://wa.me/201110509074" target="_blank" class="bg-gold-600 hover:bg-gold-500 text-dark-900 font-bold px-6 py-2 rounded-full transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> اطلب الآن
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gold-500 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800 border-t border-gold-500/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-white hover:text-gold-500 hover:bg-dark-700 rounded-md">الرئيسية</a>
+                <a href="#menu" class="block px-3 py-2 text-base font-medium text-white hover:text-gold-500 hover:bg-dark-700 rounded-md">قائمة الأسعار</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-white hover:text-gold-500 hover:bg-dark-700 rounded-md">من نحن</a>
+                <a href="https://wa.me/201110509074" class="block px-3 py-2 text-base font-medium text-gold-500 hover:bg-dark-700 rounded-md">
+                    <i class="fab fa-whatsapp mr-2"></i> 01110509074
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-bg min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="font-title text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gold-gradient-text drop-shadow-lg">
+                جزارة أبو يوسف
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-300 font-medium mb-8">
+                أقوى عروض الجزارة في مصر
+            </p>
+            
+            <div class="inline-block bg-red-900/80 border border-red-500 text-white px-6 py-3 rounded-lg mb-10 backdrop-blur-sm shadow-xl animate-pulse">
+                <i class="fas fa-exclamation-triangle text-gold-500 mr-2"></i>
+                <span class="font-bold text-lg">لا يوجد لنا أي فروع أخرى</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-gold-600 hover:bg-gold-500 text-dark-900 text-lg font-bold px-8 py-4 rounded-full transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                    تصفح قائمة الأسعار <i class="fas fa-arrow-down mr-2"></i>
+                </a>
+                <a href="tel:01110509074" class="border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-dark-900 text-lg font-bold px-8 py-4 rounded-full transition flex justify-center items-center gap-2">
+                    <i class="fas fa-phone"></i> 01110509074
+                </a>
+            </div>
+        </div>
+        
+        <!-- Decorative Bottom Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.85,130.22,201.7,121.16,256.4,114.15,310.69,96.97,321.39,56.44Z" fill="#0a0a0a"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-title text-4xl md:text-5xl font-bold gold-gradient-text inline-block mb-4 relative">
+                    قائمة منتجاتنا
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gold-500 rounded"></div>
+                </h2>
+                <p class="text-gray-400 mt-6 text-lg">أجود أنواع اللحوم الطازجة والمصنعات بأفضل الأسعار</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                
+                <!-- Category 1: لحم كندوز -->
+                <div class="category-card rounded-2xl p-6 lg:p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    
+                    <div class="flex items-center mb-8 border-b border-gold-500/30 pb-4">
+                        <div class="bg-gold-500/20 p-3 rounded-lg mr-4 ml-4">
+                            <i class="fas fa-drumstick-bite text-2xl text-gold-500"></i>
+                        </div>
+                        <h3 class="font-title text-3xl font-bold text-white">لحم كندوز صغير بلدي</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <!-- Menu Items -->
+                        <div class="menu-item"><span class="text-lg font-bold">لحم كندوز (عادي)</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">420 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">بفتيك</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">430 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">ستيك أحمر</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">450 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كبدة صافي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">450 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كلاوي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">430 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">قلب</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">430 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">شاورما</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">440 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">مفروم لحم صافي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">430 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">لحم ملبس</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">380 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">عرق فلتو</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">440 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">عرق روستو</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">440 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كلاوي صافي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">430 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">عكاوي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">440 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كوارع</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">350 <small class="text-sm text-gray-500">ج</small></span></div>
+                    </div>
+                </div>
+
+                <!-- Category 2: لحمة جاموسي -->
+                <div class="category-card rounded-2xl p-6 lg:p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    
+                    <div class="flex items-center mb-8 border-b border-gold-500/30 pb-4">
+                        <div class="bg-gold-500/20 p-3 rounded-lg mr-4 ml-4">
+                            <i class="fas fa-bacon text-2xl text-gold-500"></i>
+                        </div>
+                        <h3 class="font-title text-3xl font-bold text-white">لحمة جاموسي شباب وسط</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="menu-item"><span class="text-lg font-bold">لحمة (عادي)</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">330 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">لحمة جاموسي صافي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">370 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كبدة جاموسي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">400 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">قلب</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">380 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">مفروم (قطع و فرم)</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">330 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">مفروم عادي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">300 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">عرق فلتو (جاموسي)</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">380 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">عرق تريبانكو (جاموسي)</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">380 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">بفتيك</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">400 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">ستيك أحمر</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">400 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">ستيك ملبس</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">370 <small class="text-sm text-gray-500">ج</small></span></div>
+                    </div>
+                </div>
+
+                <!-- Category 3: لحم ضاني -->
+                <div class="category-card rounded-2xl p-6 lg:p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    
+                    <div class="flex items-center mb-8 border-b border-gold-500/30 pb-4">
+                        <div class="bg-gold-500/20 p-3 rounded-lg mr-4 ml-4">
+                            <i class="fas fa-bone text-2xl text-gold-500"></i>
+                        </div>
+                        <h3 class="font-title text-3xl font-bold text-white">لحم ضاني برقي</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="menu-item"><span class="text-lg font-bold">لحم ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">450 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">منديل ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">380 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">رقبة ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">450 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">ريش ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">470 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كبدة ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">470 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كتف ضاني</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">450 <small class="text-sm text-gray-500">ج</small></span></div>
+                    </div>
+                </div>
+
+                <!-- Category 4: المصنعات -->
+                <div class="category-card rounded-2xl p-6 lg:p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    
+                    <div class="flex items-center mb-8 border-b border-gold-500/30 pb-4">
+                        <div class="bg-gold-500/20 p-3 rounded-lg mr-4 ml-4">
+                            <i class="fas fa-hamburger text-2xl text-gold-500"></i>
+                        </div>
+                        <h3 class="font-title text-3xl font-bold text-white">المصنعات</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="menu-item"><span class="text-lg font-bold">برجر</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">300 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كفتة عادي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">300 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كفتة أرز</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">250 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">لحمة حواوشي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">200 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">سجق عادي</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">200 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">سجق مخصوص</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">320 <small class="text-sm text-gray-500">ج</small></span></div>
+                        <div class="menu-item"><span class="text-lg font-bold">كفتة شيش</span><div class="menu-dots"></div><span class="text-gold-400 font-bold text-xl">300 <small class="text-sm text-gray-500">ج</small></span></div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Features / Footer Note -->
+            <div class="mt-16 bg-dark-800 border border-gold-500/20 rounded-xl p-8 text-center max-w-3xl mx-auto">
+                <i class="fas fa-balance-scale text-4xl text-gold-500 mb-4"></i>
+                <h4 class="font-title text-2xl md:text-3xl text-white mb-2">الكيل و الميزان أبو يوسف بتاع زمان</h4>
+                <p class="text-gray-400">نضمن لكم الجودة العالية والوزن الدقيق بما يرضي الله</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-dark-900 border-t border-gold-500/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-right mb-12">
+                
+                <!-- About -->
+                <div>
+                    <h3 class="font-title text-3xl font-bold gold-gradient-text mb-6">جزارة أبو يوسف</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        نقدم أقوى عروض الجزارة في مصر. التزامنا هو تقديم أفضل وأجود أنواع اللحوم الطازجة والمصنعات يومياً لعملائنا الكرام.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-title text-2xl font-bold text-white mb-6">تواصل معنا</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gold-500">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <a href="tel:01110509074" class="hover:text-gold-500 transition dir-ltr" style="direction: ltr;">01110509074</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <div class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gold-500">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                            </div>
+                            <a href="https://wa.me/201110509074" target="_blank" class="hover:text-gold-500 transition dir-ltr" style="direction: ltr;">01110509074</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div>
+                    <h3 class="font-title text-2xl font-bold text-white mb-6">موقعنا</h3>
+                    <div class="flex items-start justify-center md:justify-start gap-3 text-gray-400">
+                        <div class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gold-500 flex-shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p class="pt-2">الزاوية الحمراء - شارع سلفانا</p>
+                    </div>
+                    <div class="mt-4 inline-block bg-red-900/40 border border-red-500/50 text-red-200 px-4 py-2 rounded text-sm">
+                        <i class="fas fa-info-circle mr-1"></i> تنويه: لا يوجد لنا أي فروع أخرى
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-dark-700 pt-8 text-center flex flex-col items-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2024 جزارة أبو يوسف. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201110509074" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 hover:scale-110 transition-all z-50 animate-bounce">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar blur on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
